@@ -34,17 +34,17 @@ class TestGroup:
             g.roll(0)
         assert g.score() == 0
 
-    def test_game_all_gutters_score(self):
+    def test_game_all_ones_score(self):
         """
         given: 20 rolls
-        when: all are 0
-        then: score is 0
+        when: all are 1
+        then: score is 1
         """
         g = bowling.Game()
 
         # twenty rolls
         for _ in range(20):
-            g.roll(0)
-        assert g.score() == 0
+            g.roll(1)
+        assert g.score() == 20
 
 
