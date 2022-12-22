@@ -8,12 +8,15 @@ class Game:
         self,
     ):
         print("Game created")
+        self.total_score = 0;
 
     def score(self):
         """
         Score
         """
-        return 0
+        return self.total_score
 
     def roll(self, pins_down: int):
         """Roll"""
+        self.total_score += pins_down
+
