@@ -13,6 +13,7 @@ class Game:
         """
         Score
         """
+        return 0
 
     def roll(self, pins_down: int):
         """Roll"""
